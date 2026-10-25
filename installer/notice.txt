@@ -1,0 +1,15 @@
+System Compressor works inside the Windows audio path with the help of Equalizer APO.
+
+Equalizer APO is a separate open-source program (GNU GPL v2 or later) by Jonas Thedering and contributors:
+https://sourceforge.net/projects/equalizerapo/
+
+If Equalizer APO is not yet installed on this PC, this Setup can install the bundled, unmodified Equalizer APO 1.4.2
+installer for you (you can untick it on the next page). Equalizer APO itself is not signed by a publisher.
+
+What this Setup does:
+  - installs System Compressor and its plug-in,
+  - briefly restarts the Windows audio service (sound pauses for about 2 seconds),
+  - adds one marked block to the Equalizer APO configuration (a backup of config.txt is kept).
+
+After the installation you may have to enable your playback device in Equalizer APO and restart Windows.
+Uninstalling removes the plug-in, the configuration block and the app; Equalizer APO itself stays.

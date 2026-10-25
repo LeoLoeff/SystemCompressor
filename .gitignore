@@ -1,0 +1,16 @@
+# Build-Ausgaben
+dist/
+bin/
+obj/
+build/
+out/
+
+# Drittanbieter-Installer (lädt build-setup.ps1 bei Bedarf herunter, SHA-256 bleibt versioniert)
+installer/redist/*.exe
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo

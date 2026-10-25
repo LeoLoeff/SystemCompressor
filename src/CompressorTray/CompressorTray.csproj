@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>SystemCompressor</AssemblyName>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Product>System Compressor</Product>
+    <AssemblyTitle>System Compressor</AssemblyTitle>
+    <!-- The layout is pixel based; with DPI-unaware mode Windows scales the whole window, so it looks
+         the same at 100/125/150 % on Windows 10 and 11. -->
+    <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The app only needs the settings definition; the reference DSP (StereoCompressor) is used by the tests. -->
+    <Compile Include="..\CompressorDsp\CompressorSettings.cs" Link="Dsp\CompressorSettings.cs" />
+  </ItemGroup>
+</Project>
